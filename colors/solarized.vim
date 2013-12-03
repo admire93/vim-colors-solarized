@@ -302,15 +302,15 @@ elseif g:solarized_termcolors == 256
     let s:vmode       = "cterm"
     let s:base03      = "234"
     let s:base02      = "235"
-    let s:base01      = "239"
-    let s:base00      = "240"
+    let s:base01      = "240"
+    let s:base00      = "241"
     let s:base0       = "244"
     let s:base1       = "245"
-    let s:base2       = "187"
+    let s:base2       = "254"
     let s:base3       = "230"
     let s:yellow      = "136"
     let s:orange      = "166"
-    let s:red         = "124"
+    let s:red         = "160"
     let s:magenta     = "125"
     let s:violet      = "61"
     let s:blue        = "33"
@@ -536,7 +536,7 @@ endif
 " note that link syntax to avoid duplicate configuration doesn't work with the
 " exe compiled formats
 
-exe "hi! Normal"         .s:fmt_none   .s:fg_base0  .s:bg_back
+exe "hi! Normal"         .s:fmt_none   .s:fg_base01  .s:base3
 
 exe "hi! Comment"        .s:fmt_ital   .s:fg_base01 .s:bg_none
 "       *Comment         any comment
@@ -548,6 +548,7 @@ exe "hi! Constant"       .s:fmt_none   .s:fg_cyan   .s:bg_none
 "        Number          a number constant: 234, 0xff
 "        Boolean         a boolean constant: TRUE, false
 "        Float           a floating point constant: 2.3e10
+"        
 
 exe "hi! Identifier"     .s:fmt_none   .s:fg_blue   .s:bg_none
 "       *Identifier      any variable name
